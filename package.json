@@ -4,11 +4,25 @@
   "main": "src/index.ts",
   "scripts": {
     "start": "nodemon -x ts-node --no-cache src/index.ts",
+    "test": "jest",
+    "eslint": "eslint",
     "generate": "graphqlgen"
   },
   "dependencies": {
     "@types/lodash": "^4.14.119",
     "graphql-yoga": "^1.16.7"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.ts": [
+      "npm run eslint -- --fix",
+      "git add",
+      "npm run test -- --findRelatedTests"
+    ]
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
