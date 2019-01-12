@@ -1,0 +1,146 @@
+type Query {
+  itemsFindAll: [Item!]
+  itemFindById(id: ID!): Item
+  itemFindByName(name: String!): Item
+
+  articlesFindAll: [Item!]
+  articleFindById(id: ID!): Item
+  articleFindByName(name: String!): Item
+
+  commentsFindAll: [Comment!]
+  commentFindById(id: ID!): Comment
+  commentFindByName(name: String!): Comment
+
+  usersFindAll: [User!]
+  userFindById(id: ID!): User
+  userFindByName(name: String!): User
+
+  teachersFindAll: [Teacher!]
+  teacherFindById(id: ID!): Teacher
+  teacherFindByName(name: String!): Teacher
+
+  coursesFindAll: [Course!]
+  courseFindById(id: ID!): Course
+  courseFindByName(name: String!): Course
+
+  classsFindAll: [Class!]
+  classFindById(id: ID!): Class
+  classFindByName(name: String!): Class
+
+  schoolsFindAll: [School!]
+  schoolFindById(id: ID!): School
+  schoolFindByName(name: String!): School
+
+  sectionsFindAll: [Section!]
+  sectionFindById(id: ID!): Section
+  sectionFindByName(name: String!): Section
+
+  gradesFindAll: [Grade!]
+  gradeFindById(id: ID!): Grade
+  gradeFindByName(name: String!): Grade
+
+  achievementsFindAll: [Achievement!]
+  achievementFindById(id: ID!): Achievement
+  achievementFindByName(name: String!): Achievement
+}
+
+type Mutation {
+  itemAdd(name: String!): Item
+  itemRemoveById(id: ID!): ID
+  itemRemoveByName(name: String!): ID
+
+  articleAdd(name: String!): Article
+  articleRemoveById(id: ID!): ID
+  articleRemoveByName(name: String!): ID
+
+  commentAdd(name: String!): Comment
+  commentRemoveById(id: ID!): ID
+  commentRemoveByName(name: String!): ID
+
+  userAdd(name: String!): User
+  userRemoveById(id: ID!): ID
+  userRemoveByName(name: String!): ID
+
+  teacherAdd(name: String!): Teacher
+  teacherRemoveById(id: ID!): ID
+  teacherRemoveByName(name: String!): ID
+
+  courseAdd(name: String!): Course
+  courseRemoveById(id: ID!): ID
+  courseRemoveByName(name: String!): ID
+
+  classAdd(name: String!): Class
+  classRemoveById(id: ID!): ID
+  classRemoveByName(name: String!): ID
+
+  schoolAdd(name: String!): School
+  schoolRemoveById(id: ID!): ID
+  schoolRemoveByName(name: String!): ID
+
+  sectionAdd(name: String!): Section
+  sectionRemoveById(id: ID!): ID
+  sectionRemoveByName(name: String!): ID
+
+  gradeAdd(name: String!): Grade
+  gradeRemoveById(id: ID!): ID
+  gradeRemoveByName(name: String!): ID
+
+  achievementAdd(name: String!): Achievement
+  achievementRemoveById(id: ID!): ID
+  achievementRemoveByName(name: String!): ID
+}
+
+type Item {
+  id: ID!
+  name: String!
+}
+
+type Article {
+  id: ID!
+  name: String!
+}
+
+type Comment {
+  id: ID!
+  name: String!
+}
+
+type User {
+  id: ID!
+  name: String!
+}
+
+type Teacher {
+  id: ID!
+  name: String!
+}
+
+type Course {
+  id: ID!
+  name: String!
+}
+
+type Class {
+  id: ID!
+  name: String!
+}
+
+type School {
+  id: ID!
+  name: String!
+}
+
+type Section {
+  id: ID!
+  name: String!
+}
+
+type Grade {
+  id: ID!
+  name: String!
+}
+
+type Achievement {
+  id: ID!
+  name: String!
+}
