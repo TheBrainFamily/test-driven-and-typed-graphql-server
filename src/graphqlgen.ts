@@ -953,7 +953,7 @@ export namespace MutationResolvers {
   }
 
   export interface ArgsItemRemoveByName {
-    name?: string | null;
+    name: string;
   }
 
   export interface ArgsArticleAdd {
@@ -965,7 +965,7 @@ export namespace MutationResolvers {
   }
 
   export interface ArgsArticleRemoveByName {
-    name?: string | null;
+    name: string;
   }
 
   export interface ArgsCommentAdd {
@@ -977,7 +977,7 @@ export namespace MutationResolvers {
   }
 
   export interface ArgsCommentRemoveByName {
-    name?: string | null;
+    name: string;
   }
 
   export interface ArgsUserAdd {
@@ -989,7 +989,7 @@ export namespace MutationResolvers {
   }
 
   export interface ArgsUserRemoveByName {
-    name?: string | null;
+    name: string;
   }
 
   export interface ArgsTeacherAdd {
@@ -1001,7 +1001,7 @@ export namespace MutationResolvers {
   }
 
   export interface ArgsTeacherRemoveByName {
-    name?: string | null;
+    name: string;
   }
 
   export interface ArgsCourseAdd {
@@ -1013,7 +1013,7 @@ export namespace MutationResolvers {
   }
 
   export interface ArgsCourseRemoveByName {
-    name?: string | null;
+    name: string;
   }
 
   export interface ArgsClassAdd {
@@ -1025,7 +1025,7 @@ export namespace MutationResolvers {
   }
 
   export interface ArgsClassRemoveByName {
-    name?: string | null;
+    name: string;
   }
 
   export interface ArgsSchoolAdd {
@@ -1037,7 +1037,7 @@ export namespace MutationResolvers {
   }
 
   export interface ArgsSchoolRemoveByName {
-    name?: string | null;
+    name: string;
   }
 
   export interface ArgsSectionAdd {
@@ -1049,7 +1049,7 @@ export namespace MutationResolvers {
   }
 
   export interface ArgsSectionRemoveByName {
-    name?: string | null;
+    name: string;
   }
 
   export interface ArgsGradeAdd {
@@ -1061,7 +1061,7 @@ export namespace MutationResolvers {
   }
 
   export interface ArgsGradeRemoveByName {
-    name?: string | null;
+    name: string;
   }
 
   export interface ArgsAchievementAdd {
@@ -1073,7 +1073,7 @@ export namespace MutationResolvers {
   }
 
   export interface ArgsAchievementRemoveByName {
-    name?: string | null;
+    name: string;
   }
 
   export type ItemAddResolver = (

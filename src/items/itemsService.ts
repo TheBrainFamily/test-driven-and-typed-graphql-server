@@ -24,7 +24,7 @@ export class ItemsService {
     return this.itemsRepository.removeById(id);
   }
 
-  removeByName(name: string): Promise<{}> {
+  removeByName(name: string): Promise<string> {
     return this.itemsRepository.removeByName(name);
   }
 }

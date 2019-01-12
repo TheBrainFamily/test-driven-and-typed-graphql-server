@@ -2,7 +2,6 @@ import {ItemsServiceType} from "./items/itemsService";
 
 export interface Context {
   itemsService: ItemsServiceType;
-  data: Data
 }
 
 export interface User {
