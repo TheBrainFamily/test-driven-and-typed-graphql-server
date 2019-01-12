@@ -1,21 +1,20 @@
 module.exports = function(wallaby) {
   return {
     files: [
-      "src/**/*.ts",
-      "src/**/*.json",
-      "src/schema.graphql",
-      { pattern: "src/**/*.spec.ts", ignore: true }
+      "src/items/itemsRepository.ts",
+      // "src/**/*.json",
+      // "src/schema.graphql",
+      // { pattern: "src/**/*.spec.ts", ignore: true }
       ],
 
-    tests: ["src/**/*.spec.ts", "acceptanceTests/**/*.spec.ts"],
-
-    compilers: {
-    },
+    tests: ["src/items/itemsRepository.spec.ts"],
+    // tests: ["src/achievements/*.spec.ts"],
 
     env: {
       type: "node"
     },
 
+    debug: true,
     testFramework: "jest"
   };
 };

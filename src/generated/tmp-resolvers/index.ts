@@ -5,6 +5,7 @@ import { Resolvers } from "../graphqlgen";
 
 import { Query } from "./Query";
 import { Item } from "./Item";
+import { Article } from "./Article";
 import { Comment } from "./Comment";
 import { User } from "./User";
 import { Teacher } from "./Teacher";
@@ -15,11 +16,11 @@ import { Section } from "./Section";
 import { Grade } from "./Grade";
 import { Achievement } from "./Achievement";
 import { Mutation } from "./Mutation";
-import { Article } from "./Article";
 
 export const resolvers: Resolvers = {
   Query,
   Item,
+  Article,
   Comment,
   User,
   Teacher,
@@ -29,6 +30,5 @@ export const resolvers: Resolvers = {
   Section,
   Grade,
   Achievement,
-  Mutation,
-  Article
+  Mutation
 };

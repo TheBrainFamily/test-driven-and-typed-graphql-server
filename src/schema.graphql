@@ -3,9 +3,9 @@ type Query {
   itemFindById(id: ID!): Item
   itemFindByName(name: String!): Item
 
-  articlesFindAll: [Item!]
-  articleFindById(id: ID!): Item
-  articleFindByName(name: String!): Item
+  articlesFindAll: [Article!]
+  articleFindById(id: ID!): Article
+  articleFindByName(name: String!): Article
 
   commentsFindAll: [Comment!]
   commentFindById(id: ID!): Comment

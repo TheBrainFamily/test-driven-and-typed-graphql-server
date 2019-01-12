@@ -3,6 +3,7 @@
 import { GraphQLResolveInfo } from "graphql";
 import {
   Item,
+  Article,
   Comment,
   User,
   Teacher,
@@ -12,7 +13,6 @@ import {
   Section,
   Grade,
   Achievement,
-  Article,
   Context
 } from "./types";
 
@@ -133,21 +133,21 @@ export namespace QueryResolvers {
     args: {},
     ctx: Context,
     info: GraphQLResolveInfo
-  ) => Item[] | null | Promise<Item[] | null>;
+  ) => Article[] | null | Promise<Article[] | null>;
 
   export type ArticleFindByIdResolver = (
     parent: undefined,
     args: ArgsArticleFindById,
     ctx: Context,
     info: GraphQLResolveInfo
-  ) => Item | null | Promise<Item | null>;
+  ) => Article | null | Promise<Article | null>;
 
   export type ArticleFindByNameResolver = (
     parent: undefined,
     args: ArgsArticleFindByName,
     ctx: Context,
     info: GraphQLResolveInfo
-  ) => Item | null | Promise<Item | null>;
+  ) => Article | null | Promise<Article | null>;
 
   export type CommentsFindAllResolver = (
     parent: undefined,
@@ -365,21 +365,21 @@ export namespace QueryResolvers {
       args: {},
       ctx: Context,
       info: GraphQLResolveInfo
-    ) => Item[] | null | Promise<Item[] | null>;
+    ) => Article[] | null | Promise<Article[] | null>;
 
     articleFindById: (
       parent: undefined,
       args: ArgsArticleFindById,
       ctx: Context,
       info: GraphQLResolveInfo
-    ) => Item | null | Promise<Item | null>;
+    ) => Article | null | Promise<Article | null>;
 
     articleFindByName: (
       parent: undefined,
       args: ArgsArticleFindByName,
       ctx: Context,
       info: GraphQLResolveInfo
-    ) => Item | null | Promise<Item | null>;
+    ) => Article | null | Promise<Article | null>;
 
     commentsFindAll: (
       parent: undefined,
@@ -609,6 +609,43 @@ export namespace ItemResolvers {
   }
 }
 
+export namespace ArticleResolvers {
+  export const defaultResolvers = {
+    id: (parent: Article) => parent.id,
+    name: (parent: Article) => parent.name
+  };
+
+  export type IdResolver = (
+    parent: Article,
+    args: {},
+    ctx: Context,
+    info: GraphQLResolveInfo
+  ) => string | Promise<string>;
+
+  export type NameResolver = (
+    parent: Article,
+    args: {},
+    ctx: Context,
+    info: GraphQLResolveInfo
+  ) => string | Promise<string>;
+
+  export interface Type {
+    id: (
+      parent: Article,
+      args: {},
+      ctx: Context,
+      info: GraphQLResolveInfo
+    ) => string | Promise<string>;
+
+    name: (
+      parent: Article,
+      args: {},
+      ctx: Context,
+      info: GraphQLResolveInfo
+    ) => string | Promise<string>;
+  }
+}
+
 export namespace CommentResolvers {
   export const defaultResolvers = {
     id: (parent: Comment) => parent.id,
@@ -648,7 +685,8 @@ export namespace CommentResolvers {
 
 export namespace UserResolvers {
   export const defaultResolvers = {
-    id: (parent: User) => parent.id
+    id: (parent: User) => parent.id,
+    name: (parent: User) => parent.name
   };
 
   export type IdResolver = (
@@ -1541,46 +1579,10 @@ export namespace MutationResolvers {
   }
 }
 
-export namespace ArticleResolvers {
-  export const defaultResolvers = {
-    id: (parent: Article) => parent.id,
-    name: (parent: Article) => parent.name
-  };
-
-  export type IdResolver = (
-    parent: Article,
-    args: {},
-    ctx: Context,
-    info: GraphQLResolveInfo
-  ) => string | Promise<string>;
-
-  export type NameResolver = (
-    parent: Article,
-    args: {},
-    ctx: Context,
-    info: GraphQLResolveInfo
-  ) => string | Promise<string>;
-
-  export interface Type {
-    id: (
-      parent: Article,
-      args: {},
-      ctx: Context,
-      info: GraphQLResolveInfo
-    ) => string | Promise<string>;
-
-    name: (
-      parent: Article,
-      args: {},
-      ctx: Context,
-      info: GraphQLResolveInfo
-    ) => string | Promise<string>;
-  }
-}
-
 export interface Resolvers {
   Query: QueryResolvers.Type;
   Item: ItemResolvers.Type;
+  Article: ArticleResolvers.Type;
   Comment: CommentResolvers.Type;
   User: UserResolvers.Type;
   Teacher: TeacherResolvers.Type;
@@ -1591,5 +1593,4 @@ export interface Resolvers {
   Grade: GradeResolvers.Type;
   Achievement: AchievementResolvers.Type;
   Mutation: MutationResolvers.Type;
-  Article: ArticleResolvers.Type;
 }

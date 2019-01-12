@@ -8,94 +8,34 @@ export const Mutation: MutationResolvers.Type = {
   itemAdd: (parent, args, {itemsService}) => itemsService.add(args.name),
   itemRemoveById: (parent, args, {itemsService}) => itemsService.removeById(args.id),
   itemRemoveByName: (parent, args, {itemsService}) => itemsService.removeByName(args.name),
-  articleAdd: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  articleRemoveById: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  articleRemoveByName: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  commentAdd: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  commentRemoveById: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  commentRemoveByName: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  userAdd: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  userRemoveById: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  userRemoveByName: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  teacherAdd: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  teacherRemoveById: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  teacherRemoveByName: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  courseAdd: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  courseRemoveById: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  courseRemoveByName: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  classAdd: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  classRemoveById: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  classRemoveByName: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  schoolAdd: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  schoolRemoveById: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  schoolRemoveByName: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  sectionAdd: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  sectionRemoveById: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  sectionRemoveByName: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  gradeAdd: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  gradeRemoveById: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  gradeRemoveByName: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  achievementAdd: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  achievementRemoveById: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  },
-  achievementRemoveByName: (parent, args, ctx) => {
-    throw new Error("Resolver not implemented");
-  }
+  articleAdd: (parent, args, ctx) => ctx.articlesService.add(args.name),
+  articleRemoveById: (parent, args, ctx) => ctx.articlesService.removeById(args.id),
+  articleRemoveByName: (parent, args, ctx) => ctx.articlesService.removeByName(args.name),
+  commentAdd: (parent, args, ctx) => ctx.commentsService.add(args.name),
+  commentRemoveById: (parent, args, ctx) => ctx.commentsService.removeById(args.id),
+  commentRemoveByName: (parent, args, ctx) => ctx.commentsService.removeByName(args.name),
+  userAdd: (parent, args, ctx) => ctx.usersService.add(args.name),
+  userRemoveById: (parent, args, ctx) => ctx.usersService.removeById(args.id),
+  userRemoveByName: (parent, args, ctx) => ctx.usersService.removeByName(args.name),
+  teacherAdd: (parent, args, ctx) => ctx.teachersService.add(args.name),
+  teacherRemoveById: (parent, args, ctx) => ctx.teachersService.removeById(args.id),
+  teacherRemoveByName: (parent, args, ctx) => ctx.teachersService.removeByName(args.name),
+  courseAdd: (parent, args, ctx) => ctx.coursesService.add(args.name),
+  courseRemoveById: (parent, args, ctx) => ctx.coursesService.removeById(args.id),
+  courseRemoveByName: (parent, args, ctx) => ctx.coursesService.removeByName(args.name),
+  classAdd: (parent, args, ctx) => ctx.classsService.add(args.name),
+  classRemoveById: (parent, args, ctx) => ctx.classsService.removeById(args.id),
+  classRemoveByName: (parent, args, ctx) => ctx.classsService.removeByName(args.name),
+  schoolAdd: (parent, args, ctx) => ctx.schoolsService.add(args.name),
+  schoolRemoveById: (parent, args, ctx) => ctx.schoolsService.removeById(args.id),
+  schoolRemoveByName: (parent, args, ctx) => ctx.schoolsService.removeByName(args.name),
+  sectionAdd: (parent, args, ctx) => ctx.sectionsService.add(args.name),
+  sectionRemoveById: (parent, args, ctx) => ctx.sectionsService.removeById(args.id),
+  sectionRemoveByName: (parent, args, ctx) => ctx.sectionsService.removeByName(args.name),
+  gradeAdd: (parent, args, ctx) => ctx.gradesService.add(args.name),
+  gradeRemoveById: (parent, args, ctx) => ctx.gradesService.removeById(args.id),
+  gradeRemoveByName: (parent, args, ctx) => ctx.gradesService.removeByName(args.name),
+  achievementAdd: (parent, args, ctx) => ctx.achievementsService.add(args.name),
+  achievementRemoveById: (parent, args, ctx) => ctx.achievementsService.removeById(args.id),
+  achievementRemoveByName: (parent, args, ctx) => ctx.achievementsService.removeByName(args.name)
 };
