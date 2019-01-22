@@ -1,0 +1,3 @@
+mutation commentRemoveById($id: ID!){
+    commentRemoveById(id: $id)
+}

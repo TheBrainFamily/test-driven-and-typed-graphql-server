@@ -1,0 +1,6 @@
+query gradeFindByName($name: String!){
+    gradeFindByName(name: $name){
+        id
+        name
+    }
+}

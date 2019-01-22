@@ -1,0 +1,3 @@
+mutation commentRemoveByName($name: String!){
+    commentRemoveByName(name: $name)
+}

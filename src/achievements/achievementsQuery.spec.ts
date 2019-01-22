@@ -2,6 +2,10 @@ import gql from "graphql-tag";
 import { when } from "../resolvers/testHelpers/when";
 import { getGqlClientWithMockedContext } from "../resolvers/testHelpers/getGqlClientWithMockedContext";
 
+const {mutations} = require("../generatedQueries/index")
+//
+// console.log("GOZDECKI queries", mutations.)
+
 test("achievementsFindAll query returns all achievements", async () => {
   const { gqlClient, context } = getGqlClientWithMockedContext();
   when(context.achievementsService.findAll()).thenResolve([
@@ -11,18 +15,8 @@ test("achievementsFindAll query returns all achievements", async () => {
     }
   ]);
 
-  const query = gql`
-    query achievements {
-      achievementsFindAll {
-        id
-        name
-      }
-    }
-  `;
 
-  const result = await gqlClient.query({
-    query
-  });
+  const result = await gqlClient.query();
 
   // @ts-ignore
   const { achievementsFindAll } = result.data;

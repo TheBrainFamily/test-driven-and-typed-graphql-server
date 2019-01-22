@@ -1,0 +1,6 @@
+query userFindByName($name: String!){
+    userFindByName(name: $name){
+        id
+        name
+    }
+}

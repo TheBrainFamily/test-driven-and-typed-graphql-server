@@ -1,0 +1,3 @@
+mutation userRemoveByName($name: String!){
+    userRemoveByName(name: $name)
+}

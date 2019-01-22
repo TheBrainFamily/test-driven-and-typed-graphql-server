@@ -1,0 +1,3 @@
+mutation gradeRemoveByName($name: String!){
+    gradeRemoveByName(name: $name)
+}

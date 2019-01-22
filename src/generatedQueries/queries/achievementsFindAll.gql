@@ -1,0 +1,6 @@
+query achievementsFindAll{
+    achievementsFindAll{
+        id
+        name
+    }
+}

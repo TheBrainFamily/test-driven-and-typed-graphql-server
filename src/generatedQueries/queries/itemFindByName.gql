@@ -1,0 +1,6 @@
+query itemFindByName($name: String!){
+    itemFindByName(name: $name){
+        id
+        name
+    }
+}

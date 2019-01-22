@@ -1,0 +1,6 @@
+mutation classAdd($name: String!){
+    classAdd(name: $name){
+        id
+        name
+    }
+}

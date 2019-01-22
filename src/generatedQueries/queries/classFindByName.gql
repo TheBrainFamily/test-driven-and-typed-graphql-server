@@ -1,0 +1,6 @@
+query classFindByName($name: String!){
+    classFindByName(name: $name){
+        id
+        name
+    }
+}

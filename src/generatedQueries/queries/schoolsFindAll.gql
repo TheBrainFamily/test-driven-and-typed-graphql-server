@@ -1,0 +1,6 @@
+query schoolsFindAll{
+    schoolsFindAll{
+        id
+        name
+    }
+}

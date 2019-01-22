@@ -1,0 +1,3 @@
+mutation classRemoveById($id: ID!){
+    classRemoveById(id: $id)
+}

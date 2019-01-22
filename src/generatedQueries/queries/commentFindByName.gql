@@ -1,0 +1,6 @@
+query commentFindByName($name: String!){
+    commentFindByName(name: $name){
+        id
+        name
+    }
+}

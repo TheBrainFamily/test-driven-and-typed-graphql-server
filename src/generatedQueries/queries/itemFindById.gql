@@ -1,0 +1,6 @@
+query itemFindById($id: ID!){
+    itemFindById(id: $id){
+        id
+        name
+    }
+}

@@ -1,0 +1,6 @@
+query achievementFindById($id: ID!){
+    achievementFindById(id: $id){
+        id
+        name
+    }
+}

@@ -1,0 +1,6 @@
+query teachersFindAll{
+    teachersFindAll{
+        id
+        name
+    }
+}

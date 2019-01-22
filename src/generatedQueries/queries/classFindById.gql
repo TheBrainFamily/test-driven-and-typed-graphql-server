@@ -1,0 +1,6 @@
+query classFindById($id: ID!){
+    classFindById(id: $id){
+        id
+        name
+    }
+}

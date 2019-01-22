@@ -1,0 +1,3 @@
+mutation courseRemoveByName($name: String!){
+    courseRemoveByName(name: $name)
+}

@@ -1,0 +1,6 @@
+query userFindById($id: ID!){
+    userFindById(id: $id){
+        id
+        name
+    }
+}

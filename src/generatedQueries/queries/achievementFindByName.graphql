@@ -1,0 +1,6 @@
+query achievementFindByName($name: String!){
+    achievementFindByName(name: $name){
+        id
+        name
+    }
+}

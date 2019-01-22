@@ -1,0 +1,6 @@
+mutation itemAdd($name: String!){
+    itemAdd(name: $name){
+        id
+        name
+    }
+}

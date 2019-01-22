@@ -1,0 +1,6 @@
+query itemsFindAll{
+    itemsFindAll{
+        id
+        name
+    }
+}

@@ -1,0 +1,6 @@
+query teacherFindById($id: ID!){
+    teacherFindById(id: $id){
+        id
+        name
+    }
+}

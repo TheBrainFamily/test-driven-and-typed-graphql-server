@@ -1,0 +1,6 @@
+query schoolFindByName($name: String!){
+    schoolFindByName(name: $name){
+        id
+        name
+    }
+}

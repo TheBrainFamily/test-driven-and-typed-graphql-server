@@ -1,0 +1,6 @@
+query classsFindAll{
+    classsFindAll{
+        id
+        name
+    }
+}

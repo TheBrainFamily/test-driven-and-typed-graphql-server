@@ -1,0 +1,7 @@
+query articleFindById($id: ID!){
+    articleFindById(id: $id){
+        id
+        name
+        abc
+    }
+}

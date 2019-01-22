@@ -1,0 +1,6 @@
+query gradesFindAll{
+    gradesFindAll{
+        id
+        name
+    }
+}

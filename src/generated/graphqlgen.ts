@@ -612,7 +612,8 @@ export namespace ItemResolvers {
 export namespace ArticleResolvers {
   export const defaultResolvers = {
     id: (parent: Article) => parent.id,
-    name: (parent: Article) => parent.name
+    name: (parent: Article) => parent.name,
+    abc: (parent: Article) => parent.abc
   };
 
   export type IdResolver = (
@@ -629,6 +630,13 @@ export namespace ArticleResolvers {
     info: GraphQLResolveInfo
   ) => string | Promise<string>;
 
+  export type AbcResolver = (
+    parent: Article,
+    args: {},
+    ctx: Context,
+    info: GraphQLResolveInfo
+  ) => string | Promise<string>;
+
   export interface Type {
     id: (
       parent: Article,
@@ -638,6 +646,13 @@ export namespace ArticleResolvers {
     ) => string | Promise<string>;
 
     name: (
+      parent: Article,
+      args: {},
+      ctx: Context,
+      info: GraphQLResolveInfo
+    ) => string | Promise<string>;
+
+    abc: (
       parent: Article,
       args: {},
       ctx: Context,

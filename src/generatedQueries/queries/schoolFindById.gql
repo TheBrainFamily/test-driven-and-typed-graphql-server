@@ -1,0 +1,6 @@
+query schoolFindById($id: ID!){
+    schoolFindById(id: $id){
+        id
+        name
+    }
+}

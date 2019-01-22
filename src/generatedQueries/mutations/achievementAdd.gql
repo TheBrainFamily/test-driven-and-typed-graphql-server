@@ -1,0 +1,6 @@
+mutation achievementAdd($name: String!){
+    achievementAdd(name: $name){
+        id
+        name
+    }
+}

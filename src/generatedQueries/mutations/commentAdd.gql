@@ -1,0 +1,6 @@
+mutation commentAdd($name: String!){
+    commentAdd(name: $name){
+        id
+        name
+    }
+}

@@ -1,0 +1,7 @@
+query articlesFindAll{
+    articlesFindAll{
+        id
+        name
+        abc
+    }
+}

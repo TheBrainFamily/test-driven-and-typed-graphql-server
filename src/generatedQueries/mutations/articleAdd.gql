@@ -1,0 +1,7 @@
+mutation articleAdd($name: String!){
+    articleAdd(name: $name){
+        id
+        name
+        abc
+    }
+}

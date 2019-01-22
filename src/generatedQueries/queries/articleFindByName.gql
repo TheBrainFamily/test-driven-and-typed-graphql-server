@@ -1,0 +1,7 @@
+query articleFindByName($name: String!){
+    articleFindByName(name: $name){
+        id
+        name
+        abc
+    }
+}

@@ -1,0 +1,6 @@
+query commentsFindAll{
+    commentsFindAll{
+        id
+        name
+    }
+}

@@ -1,0 +1,6 @@
+query gradeFindById($id: ID!){
+    gradeFindById(id: $id){
+        id
+        name
+    }
+}

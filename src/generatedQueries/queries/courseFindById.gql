@@ -1,0 +1,6 @@
+query courseFindById($id: ID!){
+    courseFindById(id: $id){
+        id
+        name
+    }
+}

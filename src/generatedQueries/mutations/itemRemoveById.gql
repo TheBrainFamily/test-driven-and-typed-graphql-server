@@ -1,0 +1,3 @@
+mutation itemRemoveById($id: ID!){
+    itemRemoveById(id: $id)
+}

@@ -48,6 +48,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-typescript": "^0.12.0",
+    "gql-generator": "^1.0.9",
     "graphql-tag": "^2.10.0",
     "graphqlgen": "0.5.0",
     "husky": "^0.14.3",

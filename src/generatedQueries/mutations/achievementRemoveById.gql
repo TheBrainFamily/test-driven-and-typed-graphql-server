@@ -1,0 +1,3 @@
+mutation achievementRemoveById($id: ID!){
+    achievementRemoveById(id: $id)
+}

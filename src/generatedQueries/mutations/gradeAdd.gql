@@ -1,0 +1,6 @@
+mutation gradeAdd($name: String!){
+    gradeAdd(name: $name){
+        id
+        name
+    }
+}

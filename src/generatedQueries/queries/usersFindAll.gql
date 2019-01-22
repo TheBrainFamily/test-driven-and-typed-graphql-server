@@ -1,0 +1,6 @@
+query usersFindAll{
+    usersFindAll{
+        id
+        name
+    }
+}

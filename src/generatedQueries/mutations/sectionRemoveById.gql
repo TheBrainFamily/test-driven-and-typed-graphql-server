@@ -1,0 +1,3 @@
+mutation sectionRemoveById($id: ID!){
+    sectionRemoveById(id: $id)
+}

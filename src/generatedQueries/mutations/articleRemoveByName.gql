@@ -1,0 +1,3 @@
+mutation articleRemoveByName($name: String!){
+    articleRemoveByName(name: $name)
+}

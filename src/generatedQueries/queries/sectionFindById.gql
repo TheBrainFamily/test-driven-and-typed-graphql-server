@@ -1,0 +1,6 @@
+query sectionFindById($id: ID!){
+    sectionFindById(id: $id){
+        id
+        name
+    }
+}

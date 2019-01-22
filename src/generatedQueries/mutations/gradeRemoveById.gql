@@ -1,0 +1,3 @@
+mutation gradeRemoveById($id: ID!){
+    gradeRemoveById(id: $id)
+}

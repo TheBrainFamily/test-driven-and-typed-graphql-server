@@ -1,0 +1,6 @@
+query coursesFindAll{
+    coursesFindAll{
+        id
+        name
+    }
+}

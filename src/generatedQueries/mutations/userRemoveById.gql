@@ -1,0 +1,3 @@
+mutation userRemoveById($id: ID!){
+    userRemoveById(id: $id)
+}

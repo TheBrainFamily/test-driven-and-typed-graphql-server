@@ -1,0 +1,6 @@
+mutation schoolAdd($name: String!){
+    schoolAdd(name: $name){
+        id
+        name
+    }
+}

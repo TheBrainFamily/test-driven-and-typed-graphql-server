@@ -1,0 +1,3 @@
+mutation classRemoveByName($name: String!){
+    classRemoveByName(name: $name)
+}

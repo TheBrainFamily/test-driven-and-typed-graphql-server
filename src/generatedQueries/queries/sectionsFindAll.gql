@@ -1,0 +1,6 @@
+query sectionsFindAll{
+    sectionsFindAll{
+        id
+        name
+    }
+}

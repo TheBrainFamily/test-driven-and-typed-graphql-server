@@ -1,0 +1,6 @@
+mutation sectionAdd($name: String!){
+    sectionAdd(name: $name){
+        id
+        name
+    }
+}

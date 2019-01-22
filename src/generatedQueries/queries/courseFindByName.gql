@@ -1,0 +1,6 @@
+query courseFindByName($name: String!){
+    courseFindByName(name: $name){
+        id
+        name
+    }
+}

@@ -1,0 +1,6 @@
+query sectionFindByName($name: String!){
+    sectionFindByName(name: $name){
+        id
+        name
+    }
+}

@@ -1,0 +1,6 @@
+query commentFindById($id: ID!){
+    commentFindById(id: $id){
+        id
+        name
+    }
+}
